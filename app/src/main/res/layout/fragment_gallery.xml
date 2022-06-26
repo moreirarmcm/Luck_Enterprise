@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/text"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ImageView
+        android:id="@+id/imageCao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cachorro"
+        app:layout_constraintEnd_toEndOf="@+id/imageLeao"
+        app:layout_constraintTop_toBottomOf="@+id/imageLeao"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageGato"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gatinho"
+        app:layout_constraintStart_toEndOf="@+id/imageLeao"
+        app:layout_constraintTop_toTopOf="@+id/imageLeao" />
+
+    <ImageView
+        android:id="@+id/imageLeao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leaozinho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMacaco"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/macaquinho"
+        app:layout_constraintStart_toStartOf="@+id/imageGato"
+        app:layout_constraintTop_toTopOf="@+id/imageCao" />
+
+    <ImageView
+        android:id="@+id/imageOvelha"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ovelhinha"
+        app:layout_constraintEnd_toEndOf="@+id/imageCao"
+        app:layout_constraintTop_toBottomOf="@+id/imageCao" />
+
+    <ImageView
+        android:id="@+id/imageVaca"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/vaquinha"
+        app:layout_constraintStart_toStartOf="@+id/imageMacaco"
+        app:layout_constraintTop_toTopOf="@+id/imageOvelha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
